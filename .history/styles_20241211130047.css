@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html, body {
+  height: 100%;
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General Reset for Audio Tag */
+audio.custom-audio {
+  position: fixed;
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+  opacity: 0.9;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%; /* Circular shape */
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add Glow on Hover */
+audio.custom-audio:hover {
+  box-shadow: 0 0 20px rgba(255, 117, 140, 0.8), 0 0 40px rgba(255, 117, 140, 0.6);
+  transform: scale(1.1); /* Slightly enlarge */
+  opacity: 1;
+}
+
+/* Style for Audio Controls */
+audio::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%; /* Match outer shape */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+  color: #fff; /* Match text color with the theme */
+  border: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  border-radius: 5px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+}
+span {
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -1.3vw;
+  border: 1px solid gold;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.66);
+  color: white;
+  position: relative;
+  padding: 1rem;
+  border: 5px solid gold;
+  background-color: #33332e;
+  opacity: 0.8;
+  border-radius: 30px;
+  max-width: 90%;
+  width: 70%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+p {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+p::first-letter {
+  font-size: 200%;
+  color: gold;
+}
+b {
+  color: orangered;
+}
+main b:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.end {
+  /* Removed position: relative as unnecessary */
+}
+.inner {
+  position: absolute;
+  background-color: #33332e;
+  width: 100%;
+  height: 60px;
+  bottom: 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added for proper vertical alignment */
+}
+img {
+  max-width: 100%;
+}
+.fa-facebook {
+  color: dodgerblue;
+  font-size: 50px;
+}
+.fa-instagram {
+  color: lightpink;
+  font-size: 50px;
+}
+.fa-whatsapp {
+  color: lawngreen;
+  font-size: 50px;
+}
+.fa-brands {
+  padding-right: 30px;
+}
+i {
+  padding-right: 30px;
+  transition: transform 0.3s ease-in-out; /* Optimized transition */
+}
+i:hover {
+  transform: scale(1.5);
+}

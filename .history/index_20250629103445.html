@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="styles.css">
+<title>Rain</title>
+</head>
+<body>
+    
+    <audio id="myAudio">
+        <source src="assets/rain-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <button class="play-btn" id="playButton">🎵</button>
+      
+    
+<video autoplay muted loop id="myVideo">    
+<source src="assets/rainvideo.mp4">
+</video>
+ <header class="viewport-header">    
+<h1>RAIN
+<span>and my project</span>
+</h1>    
+</header> 
+<main>   
+    <p>Rain is <b>water droplets</b> that have <b>condensed</b> from  <b>atmospheric water vapor</b> and then <b>fall under gravity.</b> Rain is a major component of the <b>water cycle</b> and is responsible for depositing most of the <b>fresh water</b> on the Earth. It provides water for <b>hydroelectric power plants,</b> crop <b>irrigation,</b> and suitable conditions for many types of <b>ecosystems.</b></p> 
+    <p>The major cause of rain production is moisture moving along three-dimensional zones of temperature and moisture contrasts known as weather fronts. If enough moisture and upward motion is present, precipitation falls from convective clouds (those with strong upward vertical motion) such as cumulonimbus (thunder clouds) which can organize into narrow rainbands. In mountainous areas, heavy precipitation is possible where upslope flow is maximized within windward sides of the terrain at elevation which forces moist air to condense and fall out as rainfall along the sides of mountains. On the leeward side of mountains, desert climates can exist due to the dry air caused by downslope flow which causes heating and drying of the air mass. The movement of the monsoon trough, or intertropical convergence zone, brings rainy seasons to savannah climes. </p> 
+    <p>The urban heat island effect leads to increased rainfall, both in amounts and intensity, downwind of cities. Global warming is also causing changes in the precipitation pattern, including wetter conditions across eastern North America and drier conditions in the tropics. Antarctica is the driest continent. The globally averaged annual precipitation over land is 715 mm (28.1 in), but over the whole Earth, it is much higher at 990 mm (39 in).[1] Climate classification systems such as the Köppen classification system use average annual rainfall to help differentiate between differing climate regimes. Rainfall is measured using rain gauges. Rainfall amounts can be estimated by weather radar. </p> 
+    </main>    
+    <footer>
+<div class="end"> 
+<img src="assets/%E2%80%94Pngtree%E2%80%94forest%20silhouette%20hills%20forest_14692854.png">
+<div class="inner">
+<script src="https://kit.fontawesome.com/f15103ee66.js" crossorigin="anonymous"></script>
+    <a href="https://www.facebook.com/lazyclicker/" > 
+<i class="fa-brands fa-facebook"></i>
+    </a>    
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-whatsapp"></i>    
+    </div>    
+</div>
+</footer>
+<script>// Get the audio and play button elements
+    const audio = document.getElementById('myAudio');
+    const playButton = document.getElementById('playButton');
+    
+    // Play or pause the audio when the play button is clicked
+    playButton.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        playButton.textContent = '❚❚';  // Change button to pause symbol
+      } else {
+        audio.pause();
+        playButton.textContent = '🎵';  // Change button back to play symbol
+      }
+    });
+    </script>
+</body>
+</html>
+
+
+<!--
+<body>
+<div class="main">  
+i want  to say<div class="hover-text"><b>"Hover me"</b>
+    <span class="tooltip-text">
+        <img src="https://images.ctfassets.net/hrltx12pl8hq/01rJn4TormMsGQs1ZRIpzX/16a1cae2440420d0fd0a7a9a006f2dcb/Artboard_Copy_231.jpg?fit=fill&w=600&h=600" alt="Tooltip Image">
+        I'm a tooltip with text! some more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more textsome more text
+    </span>   
+</div>
+to you   
+</div> 
+
+
+
+</body>
+-->
